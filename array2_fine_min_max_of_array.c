@@ -14,7 +14,7 @@ int fine_min_max_elemet(){
     }
 
     for(int i = 0 ; i<element ; i++){
-        printf("enter thee %dth elemet of the array : ",i+1);
+        printf("enter the %dth elemet of the array : ",i+1);
         scanf("%d",&arr[i]);
     }
 
@@ -30,7 +30,8 @@ int fine_min_max_elemet(){
         }
     }
     printf("\nthe max of given array is : %d \n the min of given array is : %d ",max,min);
-    
+     free(arr);
+     arr=NULL;
 }
 
 
